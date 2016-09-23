@@ -1,0 +1,42 @@
+name:                GVinHS
+version:             0.1.0.0
+synopsis:            Initial project template from stack
+description:         Please see README.md
+homepage:            https://github.com/matthias.goergens/GVinHS#readme
+license:             BSD3
+license-file:        LICENSE
+author:              Matthias Görgens
+maintainer:          matthias.goergens@gmail.com
+copyright:           All rights reserved.
+category:            experimental
+build-type:          Simple
+-- extra-source-files:
+cabal-version:       >=1.10
+
+library
+  hs-source-dirs:      src
+  exposed-modules:     Eq
+                     , GVXexamples
+                     , GVexamples
+                     , LLCexamples
+                     , Language.ClosedGV
+                     , Language.ClosedGV.Pol
+                     , Language.GV
+                     , Language.GV.CPS
+                     , Language.GV.IO
+                     , Language.GV.Pol
+                     , Language.GVX
+                     , Language.LLC
+                     , Language.LLC.Monadic
+                     , Language.LLC.Plain
+                     , Language.LLCSimple
+                     , Language.PolGV
+                     , Language.PolGV.CPS
+                     , Language.ST
+                     , PolGVexamples
+  build-depends:       base >= 4.7 && < 5
+  default-language:    Haskell2010
+
+source-repository head
+  type:     git
+  location: https://github.com/jgbm/GVinHs.git
